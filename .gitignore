@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+ENV/
+.env
+
+# Credentials & Secrets (CRITICAL)
+credentials/.env
+credentials/client_secret.json
+credentials/token.pickle
+
+# Data & Database
+data/
+*.xlsx
+*.db
+
+# Interaction & Logs
+logs/
+*.log
+bot.lock
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+.trae/
