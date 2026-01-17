@@ -23,4 +23,4 @@ EXCEL_FILE = os.getenv("EXCEL_FILE", os.path.join(DATA_DIR, "shifts_log.xlsx"))
 DB_FILE = os.getenv("DB_FILE", os.path.join(DATA_DIR, "bot_database.db"))
 
 GOOGLE_SHEET_ID = os.getenv("GOOGLE_SHEET_ID", "")
-DRIVE_FOLDER_ID = os.getenv("DRIVE_FOLDER_ID", "1fgE-zc0d2IPWSyKx6HN0QNlyH3upca7Y")
+DRIVE_FOLDER_ID = os.getenv("DRIVE_FOLDER_ID", "")
