@@ -44,3 +44,10 @@ python3 main.py
 *   Локальная база данных (SQLite): `data/bot_database.db`
 *   Локальный Excel отчет: `data/shifts_log.xlsx`
 *   Логи работы: `logs/bot_output.log`
+
+## 🧪 Примеры файлов
+В папке `data_examples/` находятся примеры структуры файлов:
+*   `bot_database.db.example` — структура таблиц SQLite.
+*   `shifts_log.xlsx.example` — структура листов и заголовков Excel.
+*   `credentials/.env.example` — пример файла переменных окружения.
+*   `credentials/client_secret.json.example` — пример ключа Google API.
