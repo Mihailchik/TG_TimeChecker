@@ -14,11 +14,11 @@ if not BOT_TOKEN:
 
 if missing_vars:
     print("\n" + "!"*60)
-    print("❌ КРИТИЧЕСКАЯ ОШИБКА: Отсутствуют обязательные переменные:")
+    print("❌ CRITICAL ERROR: Missing required environment variables:")
     for var in missing_vars:
         print(f"   - {var}")
-    print("\nПожалуйста, настройте файл credentials/.env")
-    print("Инструкция по настройке: docs/SETUP.md")
+    print("\nPlease configure the credentials/.env file.")
+    print("Setup instructions: docs/SETUP.md")
     print("!"*60 + "\n")
 
 # --- Optional Integrations ---
@@ -26,9 +26,9 @@ GOOGLE_SHEET_ID = os.getenv("GOOGLE_SHEET_ID", "")
 DRIVE_FOLDER_ID = os.getenv("DRIVE_FOLDER_ID", "")
 
 if not GOOGLE_SHEET_ID:
-    print("⚠️ ПРЕДУПРЕЖДЕНИЕ: GOOGLE_SHEET_ID не задан. Интеграция с Google Таблицами отключена.")
+    print("⚠️ WARNING: GOOGLE_SHEET_ID is not set. Google Sheets integration disabled.")
 if not DRIVE_FOLDER_ID:
-    print("⚠️ ПРЕДУПРЕЖДЕНИЕ: DRIVE_FOLDER_ID не задан. Загрузка видео на Google Drive отключена.")
+    print("⚠️ WARNING: DRIVE_FOLDER_ID is not set. Google Drive video upload disabled.")
 
 # --- Site Settings ---
 SITES = [
